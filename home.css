@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120vh;
+  }
+a{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;  
+ }
+h2{
+padding: 8px;
+display: inline;
+justify-content: center;
+text-align: center;
+color:  silver;
+border: 3px solid cadetblue;
+background-color: aliceblue;
+margin: 0;
+float: left;
+margin-left: 10px;
+}
+.input.input{
+width: 200px;
+height: 60%;
+top: 0;
+left: 0;
+cursor: pointer;
+display: flex;
+font-size: 10px;
+padding: 10px 15px;
+border-radius: 10px;
+border: none;
+outline: transparent;
+float: left;
+position: relative;
+}
+.input:focus{
+    border: 2px solid red;
+}
+.input .btn:hover{
+    background-color: rgb(160, 54, 54);
+}
+.input .btn{
+position: absolute;
+    top: 10px;
+    right:0;
+    width: 60px;
+    height: 60%;
+    z-index: 1;
+    cursor: pointer;
+    outline: transparent;
+    border: none;
+    background-color: red;
+    font-size: 15px;
+    border-radius: 0 10px 10px 0;
+    color: white;
+}
+.nav{
+    background:grey;
+    justify-content: center;
+    margin-top: 1%;
+    position: sticky;
+    top: 0;
+    padding: 3px;
+}
+li{
+     margin-left: 27px;
+     line-height: 14px;
+     list-style: none;
+}
+.nav::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.nav ul{
+    list-style: none;
+    display: inline;
+    text-align: center;
+    word-spacing: 20px;
+    line-height: 3px;
+}
+.nav > ul >li{
+    float: left;
+    position: relative;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color:whitesmoke;
+    padding: 15px;
+    display: block;
+}
+.nav ul li a.active {
+    color:red;
+    border-bottom: 3px solid silver;
+    
+}
+.nav ul li:hover a{
+    background:silver;
+    transition: 0.5s ease-in-out ;
+}
+.nav ul ul{
+    position: absolute;
+    padding: 0;
+    min-width: 200px;
+    display: none;
+    top: 100%;
+    left: 0;
+}
+.nav ul li:hover > ul{
+    display: block;
+}
+/*
+.links{
+    position: fixed;
+    top: 70px;
+    right: 0;
+    z-index: 2;
+    height: 100vh;
+    width: 250px;
+    background-color: white;
+    transform: translateX(-250px);
+    transition: 0.5s;
+}
+.link{
+    padding: 12px 5px;
+    font-weight:600 ;
+    text-decoration: none;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    color: teal;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.link.active ,.link:hover{
+    color: red;
+    background-color:#eee;
+}
+.content{
+    padding: 20px;
+}
+.open.links{
+    transform: translateX(0px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(2px);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+.open.overlay{
+    visibility: visible;
+    opacity: 1;
+}
+*/
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:url(stadium.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.wrapper{
+    width: 420px;
+    background:transparent;
+    border: 2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    color: #ddd;
+    border-radius: 15px;
+    padding: 30px 40px;
+}
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 30px;
+    font-size: 16px;
+    color: #ddd;
+    padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder {
+    color: #ddd;
+}
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.wrapper .remember-forget{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: -15px 0 15px;
+}
+.remember-forget label input{
+    accent-color:#fff;
+    margin-right: 3px;
+}
+.remember-forget a{
+    color: #fff;
+    text-decoration: none;
+}
+.remember-forget a:hover{
+    text-decoration: underline;
+}
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    cursor: pointer;
+    font-size: 16px;
+    color:  #333;
+    font-weight: 600;
+}
+.wrapper .register-link{
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+.register-link p a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+.material-icons{
+    color: white;
+    position: absolute;
+    padding: 9px;
+    cursor: pointer;
+}
+.footer{
+    background-color: #ddd;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer ul li{
+    list-style: none;
+    display:inline;
+}
+.footer ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    color:rgb(32, 197, 95);
+}
+.footer ul li a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color:rgb(49, 31, 116);
+}
